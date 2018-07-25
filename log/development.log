@@ -182,3 +182,23 @@ Started GET "/posts/new" for 72.230.65.216 at 2018-07-25 20:00:23 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 72.230.65.216 at 2018-07-25 20:04:40 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=&post%5Bdescription%5D=" for 72.230.65.216 at 2018-07-25 20:05:10 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"", "description"=>""}}
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=dd&post%5Bdescription%5D=ddd" for 72.230.65.216 at 2018-07-25 20:05:20 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"dd", "description"=>"ddd"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
